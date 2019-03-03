@@ -18,11 +18,12 @@ export default class AuthLoadingScreen extends Component {
 	loadAuthState = async () => {
 		const { navigation } = this.props;
 		setTimeout(() => {
-			if (Math.random() >= 0.5) {
-				navigation.navigate('AuthStack');
-			} else {
-				navigation.navigate('AppStack');
-			}
+			navigation.navigate('AuthStack');
+			// if (Math.random() >= 0.5) {
+			// 	navigation.navigate('AuthStack');
+			// } else {
+			// 	navigation.navigate('AppStack');
+			// }
 		}, 2000);
 	};
 
